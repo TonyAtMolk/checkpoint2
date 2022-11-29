@@ -17,6 +17,8 @@ def add_word(C, word, translation):
     cur = C.cursor()
     cur.execute(f"INSERT INTO dictionary (word, translation) VALUES ('{word}', '{translation}');")
     cur.close()
+def insert_word(C, word, translation):
+    print("Replacement function to add_word()")
 def delete_word(C, ID):
     cur = C.cursor()
     cur.execute(f"DELETE FROM dictionary WHERE id = '{ID}';")
