@@ -1,9 +1,10 @@
 import psycopg2
 conn = psycopg2.connect(
    host="localhost",
-   database="database",
-   user="user",
-   password="abc123"
+   database="Checkpoint2",
+   user="postgres",
+   port="5433",
+   password="tmad1652"
 )
 
 def read_dict(C):
